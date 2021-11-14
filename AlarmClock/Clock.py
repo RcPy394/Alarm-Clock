@@ -42,6 +42,8 @@ sleep = tk.Button(window, text="Stop Alarm", width=40,state=DISABLED, bg='white'
 sleep.place(x=95, y=180)
 inputtxt = tk.Entry(window)
 inputtxt.place(x=175,y=30)
+lbl=tk.Label(window,bg="navy",fg='white',text='Enter time in 24 hour notation').place(x=175,y=5)
+lbl2=tk.Label(window,bg="navy",fg='white',text='Select tone:').place(x=10,y=210)
 drop = OptionMenu(window,clicked,*Music,command=settune)
 drop.place(x=80,y=210)
 AlarmClock()
